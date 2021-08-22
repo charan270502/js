@@ -11,10 +11,10 @@ sample(8);
 sample(9);
 sample(11);
 
-function getUserRole(name, role) {
+var getUserRole = function (name, role) {
   switch (role) {
     case "admin":
-      console.log(`${name},get full access`);
+      console.log(`${name},get full access ! `);
       break;
     case "subadmin":
       console.log(`${name},get access to create/delete courses`);
@@ -29,7 +29,7 @@ function getUserRole(name, role) {
       console.log(`${name},trial User`);
       break;
   }
-}
+};
 
 getUserRole("charan", "admin");
 getUserRole("charanmurugan", "subadmin");
