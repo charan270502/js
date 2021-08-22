@@ -11,6 +11,6 @@ var google = true,
   faacebook = false,
   email = true;
 
-if (google || faacebook || email) {
+if ((google && faacebook) || email) {
   console.log("Succesfully logged in");
 }
